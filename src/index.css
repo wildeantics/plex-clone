@@ -28,12 +28,25 @@ body {
 .vline {
   background-color: var(--color-accent-dark-grey);
 }
+.search {
+  background-color: var(--color-bg);
+}
+.btn {
+  text-transform: uppercase;
+}
+.btn-premium {
+  background-color: var(--color-accent-gold);
+  color: var(--color-accent-grey);
+}
 
 /* Sidebar */
+.sidebar-wide,
+.sidebar-slim {
+  height: 90vh;
+}
 .sidebar-wide {
   background-color: var(--color-bg-overlay);
   width: 18rem;
-  height: 90vh;
 }
 .sidebar-slim {
   width: 4rem;
@@ -47,10 +60,15 @@ body {
   display: none;
 }
 
-.btn {
-  text-transform: uppercase;
+/* Swiper */
+.swiper-slide {
+  height: 317px !important;
+  width: 165px !important;
 }
-.btn-premium {
-  background-color: var(--color-accent-gold);
-  color: var(--color-accent-grey);
+
+/* Content Frame */
+.content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 90vh;
 }
